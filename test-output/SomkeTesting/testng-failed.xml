@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SomkeTesting]" parallel="methods">
+  <test thread-count="5" name="Test(failed)" parallel="methods">
+    <classes>
+      <class name="com.crm.autodesk.contacttest.CreateContact">
+        <methods>
+          <include name="cretecontactwithORg"/>
+          <include name="configAM"/>
+          <include name="cretecontact"/>
+          <include name="configBM"/>
+          <include name="configBS"/>
+          <include name="configBC"/>
+          <include name="configAS"/>
+          <include name="configAC"/>
+        </methods>
+      </class> <!-- com.crm.autodesk.contacttest.CreateContact -->
+      <class name="com.crm.autodesk.leadtest.LeadBatchExecution">
+        <methods>
+          <include name="ConvertLeadToOpertunities"/>
+          <include name="ConvertLeadToOpertunitiesAllChecks"/>
+          <include name="configAM"/>
+          <include name="ConvertLeadToContacts"/>
+          <include name="ConvertLeadToOpertunitiesNOtFillMaindatory"/>
+          <include name="configBM"/>
+          <include name="ConvertLeadToOrganization"/>
+          <include name="configBS"/>
+          <include name="configBC"/>
+          <include name="ConvertLeadToOpertunitiesByNOtFill"/>
+          <include name="configAS"/>
+          <include name="configAC"/>
+        </methods>
+      </class> <!-- com.crm.autodesk.leadtest.LeadBatchExecution -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [SomkeTesting] -->
