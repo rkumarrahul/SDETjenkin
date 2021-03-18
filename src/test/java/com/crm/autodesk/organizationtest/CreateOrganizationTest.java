@@ -15,7 +15,7 @@ import com.crm.comcast.objectrepositoryutility.Login;
  * @author Deepak
  *
  */
-public class CreateOrganization {
+public class CreateOrganizationTest {
 
 	@Test
 	public void createOrgtest() throws Throwable {
@@ -25,7 +25,7 @@ public class CreateOrganization {
 		Login lp = new Login(driver);
 
 		      lp.loginToAPP("admin", "admin");
-		   
+		   System.out.println("execute");
 		
 	}
 
